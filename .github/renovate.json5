@@ -36,7 +36,7 @@
       customType: "regex",
       fileMatch: ["rooted-ota.sh"],
       matchStrings: [ "MAGISK_VERSION=\\$\\{MAGISK_VERSION:-'(?<currentValue>v[\\d.]+)'\\}" ],
-      depNameTemplate: "topjohnwu/Magisk",
+      depNameTemplate: "pixincreate/Magisk",
       datasourceTemplate: "github-releases"
     }
   ]
