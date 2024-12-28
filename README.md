@@ -44,7 +44,7 @@ TLDR:
 
 #### Patch GrapheneOS with OTAs from this image
 
-* Download the [OTA from releases](https://github.com/schnatterer/rooted-graphene/releases/) with **the same version** that you just installed. 
+* Download the [OTA from releases](https://github.com/nixigaj/rooted-graphene/releases/) with **the same version** that you just installed. 
 * Extract the partition images from the patched OTA that are different from the original.
     ```bash
     avbroot ota extract \
@@ -76,7 +76,7 @@ TLDR:
     ```bash
     fastboot reboot-bootloader
     fastboot erase avb_custom_key
-    curl -s https://raw.githubusercontent.com/schnatterer/rooted-graphene/main/avb_pkmd.bin > avb_pkmd.bin
+    curl -s https://raw.githubusercontent.com/nixigaj/rooted-graphene/main/avb_pkmd.bin > avb_pkmd.bin
     fastboot flash avb_custom_key avb_pkmd.bin
     ```
 * **[Optional]** Before locking the bootloader, reboot into Android once to confirm that everything is properly signed.  
@@ -103,7 +103,7 @@ TLDR:
 * [Disable system updater app](https://github.com/chenxiaolong/avbroot#ota-updates).
 * Use the [Custota](https://github.com/chenxiaolong/Custota) magisk module.
   * To do so, download and install the Custota module in magsik and reboot.
-  * Open Custota and set the OTA server URL to point to this OTA server:  https://schnatterer.github.io/rooted-graphene/magisk
+  * Open Custota and set the OTA server URL to point to this OTA server:  https://nixigaj.github.io/rooted-graphene/magisk
 * Alternatively you could do updates manually via `adb sideload`:
   * reboot the device and begin holding the volume down button until it boots up into the bootloader interface
   * using volume buttons, toggle to recovery. Confirm by pressing power button
@@ -116,7 +116,7 @@ TLDR:
 
 In order to remove root, you can change to the "rootless" flavor.
 
-To do so, set the following URL in custota: https://schnatterer.github.io/rooted-graphene/rootless/
+To do so, set the following URL in custota: https://nixigaj.github.io/rooted-graphene/rootless/
 
 Note that you can update to this flavor to disable root. However, after the upgrade, custota will no longer work. For re-enabling root, you will have to use `adb sideload`.
 
@@ -151,9 +151,9 @@ See GitHub actions for automating this:
 
 ```shell
 GITHUB_TOKEN=gh... \
-GITHUB_REPO=schnatterer/rooted-graphene \
-DEVICE_ID=oriole \
-MAGISK_PREINIT_DEVICE=metadata \
+GITHUB_REPO=nixigaj/rooted-graphene \
+DEVICE_ID=caiman \
+MAGISK_PREINIT_DEVICE=sda10 \
 bash -c '. rooted-ota.sh && createAndReleaseRootedOta'
 ```
 
