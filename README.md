@@ -3,10 +3,9 @@ rooted-graphene
 
 
 GrapheneOS over the air updates (OTAs) patched with Magisk using [avbroot](https://github.com/chenxiaolong/avbroot) allowing for AVB and locked bootloader *and* root access.
-Provides its own OTA server for [Custota](https://github.com/chenxiaolong/Custota) magisk module.
+Provides its own OTA server for [Custota](https://github.com/chenxiaolong/Custota) magisk module. This is for personal use so only the Pixel 9 Pro is supported (codename: `caiman`)
 
-> ⚠️ OS and root work in general. However, zygisk does not (and [likely never will](https://github.com/topjohnwu/Magisk/pull/7606)) work, leading to magisk being easily discovered by other apps and lots of banking apps not working.  
- See [bellow](#using-other-rooting-mechanisms) for alternatives.
+> Uses a custom custom version of Magisk for Zygisk support. [https://github.com/pixincreate/Magisk](https://github.com/pixincreate/Magisk)
 
 ## Usage
 
