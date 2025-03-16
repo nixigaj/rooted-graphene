@@ -35,7 +35,7 @@ OTA_VERSION=${OTA_VERSION:-'latest'}
 # Breaking changes in magisk might need to be adapted in new avbroot version
 # Find latest magisk version here: https://github.com/topjohnwu/Magisk/releases, or:
 # curl --fail -sL -I -o /dev/null -w '%{url_effective}' https://github.com/topjohnwu/Magisk/releases/latest | sed 's/.*\/tag\///;'
-MAGISK_VERSION=${MAGISK_VERSION:-'canary-28003'}
+MAGISK_VERSION=${MAGISK_VERSION:-'canary-28102'}
 
 SKIP_CLEANUP=${SKIP_CLEANUP:-''}
 
