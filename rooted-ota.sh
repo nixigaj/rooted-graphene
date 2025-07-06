@@ -35,7 +35,7 @@ OTA_VERSION=${OTA_VERSION:-'latest'}
 # Breaking changes in magisk might need to be adapted in new avbroot version
 # Find latest magisk version here: https://github.com/topjohnwu/Magisk/releases, or:
 # curl --fail -sL -I -o /dev/null -w '%{url_effective}' https://github.com/topjohnwu/Magisk/releases/latest | sed 's/.*\/tag\///;'
-MAGISK_VERSION=${MAGISK_VERSION:-'canary-28102'}
+MAGISK_VERSION=${MAGISK_VERSION:-'canary-29001'}
 
 SKIP_CLEANUP=${SKIP_CLEANUP:-''}
 
@@ -50,9 +50,9 @@ UPLOAD_TEST_OTA=${UPLOAD_TEST_OTA:-false}
 OTA_CHANNEL=${OTA_CHANNEL:-stable} # Alternative: 'alpha'
 OTA_BASE_URL="https://releases.grapheneos.org"
 
-AVB_ROOT_VERSION=3.11.0
+AVB_ROOT_VERSION=3.17.2
 
-CUSTOTA_VERSION=5.4
+CUSTOTA_VERSION=5.11
 
 CHENXIAOLONG_PK='ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDOe6/tBnO7xZhAWXRj3ApUYgn+XZ0wnQiXM8B7tPgv4'
 
